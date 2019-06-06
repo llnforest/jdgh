@@ -1,0 +1,148 @@
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    width:50px;
+    border-radius: 5px;
+}
+.main-content{
+    margin-top:50px;
+}
+.content-item{
+    width:30%;
+    padding-right:40px;
+    margin-bottom:20px;
+    min-height:283px;
+    overflow: hidden;
+}
+.content-item.no-padding{
+    width:40%;
+    padding-right:0px;
+}
+.content-item.no-padding.content-long{
+    width:70%;
+}
+.content-list{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    line-height:30px;
+}
+.no-padding .content-list{
+    padding-right:100px;
+    position:relative;
+}
+.content-list span{
+    position:absolute;
+    color:#666;
+    right:0px;
+ }
+.content-item .long-left{
+    width:43%;
+    float:left;
+    padding-right:40px;
+}
+.content-item .long-left-area{
+    border:1px solid #ddd;
+    height:240px;
+}
+.content-item .long-right{
+    width:57%;
+    float:left;
+}
+.content-item .news-img{
+    height:190px;
+}
+.content-item .news-title{
+    line-height:40px;
+    font-size:18px;
+    padding:0 5px;
+    color:#044fa0;
+    cursor:pointer;
+}
+.content-item .news-hot{
+    height:125px;
+    margin-bottom:15px;
+    background-color:#f8f8f8;
+}
+.content-item .news-hot .hot-day{
+    color:#044fa0;
+    font-weight:700;
+    display:block;
+    text-align:center;
+    font-size:30px;
+}
+.content-item .news-hot .hot-month{
+    color:#044fa0;
+    display:block;
+    text-align:center;
+}
+.content-item .news-hot .hot-left{
+    display:inline-block;
+    position:absolute;
+    height: 70px;
+    border-right:3px solid #044fa0;
+    width:85px;
+    margin-top:10px;
+}
+.content-item .news-hot .hot-right{
+    padding-left:100px;
+}
+.content-item .news-hot .hot-title{
+    line-height:35px;
+    height:70px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-bottom:10px;
+    padding-top:10px;
+}
+.content-item .news-hot .hot-content{
+    height:35px;
+    line-height:35px;
+    color:#666;
+    font-size:14px;
+}
+
+/*special部分*/
+.special-area{
+    margin-left: 3px;
+    border:1px solid #e36769;
+}
+.special-title{
+    font-weight: 700;
+    font-size:18px;
+    padding-left:10px;
+    height:50px;
+
+    position:relative;
+}
+.special-text{
+    color:#e36769;
+    line-height:50px;
+}
+.special-dot{
+    color:#e36769;
+    height:20px;
+    width:10px;
+    display:inline-block;
+    position:absolute;
+    background:#fff;
+    top:10px;
+    left:-4px;
+}
+.special-list{
+    padding:0 30px;
+}
+.special-item{
+    display:block;
+    text-align:center;
+    line-height:45px;
+    background:#e36769;
+    color:#fff;
+    margin-bottom:10px;
+
+}
+.special-1{
+    background-color:#bd74dd;
+}.special-2{
+    background-color:#9ac448;
+}.special-3{
+    background-color:#59cac4;
+}
