@@ -1,282 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>demo</title>
-    <link href="__StaticStyle__/css/common.css?{$Think.config.version_time}" rel="stylesheet">
-    <link href="__StaticStyle__/css/nav.css?{$Think.config.version_time}" rel="stylesheet">
-    <link href="__StaticStyle__/css/index.css?{$Think.config.version_time}" rel="stylesheet">
-    <link href="__StaticStyle__/css/swiper.css?{$Think.config.version_time}" rel="stylesheet">
-    <script type="text/javascript" src="__StaticStyle__/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="__StaticStyle__/js/swiper.js"></script>
-</head>
+{include file="public:head" title="demo"
+css='<link href="__StaticStyle__/css/index.css" rel="stylesheet"><link href="__StaticStyle__/css/swiper.css" rel="stylesheet">'
+js='<script type="text/javascript" src="__StaticStyle__/js/swiper.js"></script>'
+}
 <body>
-    <div class="main-header" style="background:url(__StaticStyle__/image/index_header.png) no-repeat center;">
-
+{include file="public:nav"}
+<div class="main-swiper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <a class="swiper-slide" href=""><img src="__StaticStyle__/image/index_bg1.png" alt="" /></a>
+        </div>
+        <ul class="slidershow-nav">
+        </ul>
     </div>
-    <div class="main-nav common-width">
-        <div class="now-time">今天是：2019年06月01日 星期六</div>
-            <!--<span class="nav-item">建大首页</span>-->
-            <!--<span class="nav-item">建大首页</span>-->
-            <!--<span class="nav-item">建大首页</span>-->
-            <!--<span class="nav-item">建大首页</span>-->
-            <!--<span class="nav-item">建大首页</span>-->
-            <!--<span class="nav-item">建大首页</span>-->
-        <div class="index-nav">
-            <div class="index-nav-frame clearfix">
-                <div class="nav-line">
-
-                </div>
-                <div class="nav-small" tabindex="-1">
-                    <div class="nav-small-focus" tabindex="-1">
-
-                    </div>
-                    <img src="img/icon.png">
-                </div>
-                <a class="index-nav-frame-line active" tabindex="-1">
-                    首页
-                </a>
-                <a class="index-nav-frame-line" tabindex="-1">
-                    第二页面
-                </a>
-                <div class="index-nav-frame-line" tabindex="-1">
-                    第三页面
-                    <div class="index-nav-frame-line-center">
-                        <a class="index-nav-frame-line-li">
-                            第三页面1
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第三页面2
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第三页面3
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第三页面4
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第三页面5
-                        </a>
-                    </div>
-                </div>
-                <div class="index-nav-frame-line" tabindex="-1">
-                    第四页面
-                    <div class="index-nav-frame-line-center">
-
-                        <a class="index-nav-frame-line-li">
-                            第四页面1
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第四页面2
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第四页面3
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第四页面4
-                        </a>
-                        <a class="index-nav-frame-line-li">
-                            第四页面5
-                        </a>
-                    </div>
+</div>
+<div class="main-content common-width">
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">公告栏</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <ul class="content-area">
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+        </ul>
+    </div>
+    <div class="content-wrap content-item fir no-padding content-long">
+        <div class="content-head">
+            <span class="head-title">工会新闻</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <div class="long-left">
+            <div class="long-left-area">
+                <div class="news-img" style="background:url(__StaticStyle__/image/news_bg.png) no-repeat center;"></div>
+                <div class="limit-text news-title">
+                    关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main-swiper">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <a class="swiper-slide" href=""><img src="__StaticStyle__/image/index_bg1.png" alt="" /></a>
-            </div>
-            <ul class="slidershow-nav">
-            </ul>
-        </div>
-    </div>
-    <div class="main-content common-width">
-        <div class="content-wrap content-item fir">
-            <div class="content-head">
-                <span class="head-title">公告栏</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            </ul>
-        </div>
-        <div class="content-wrap content-item fir no-padding content-long">
-            <div class="content-head">
-                <span class="head-title">工会新闻</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <div class="long-left">
-                <div class="long-left-area">
-                    <div class="news-img" style="background:url(__StaticStyle__/image/news_bg.png) no-repeat center;"></div>
-                    <div class="limit-text news-title">
+
+        <div class="long-right">
+            <div class="news-hot">
+                <div class="hot-left">
+                    <span class="hot-day">01</span>
+                    <span class="hot-month">2019-06</span>
+                </div>
+                <div class="hot-right">
+                    <div class="hot-title">
+                        关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
+                    </div>
+                    <div class="hot-content limit-text">
                         关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
                     </div>
                 </div>
             </div>
-
-            <div class="long-right">
-                <div class="news-hot">
-                    <div class="hot-left">
-                        <span class="hot-day">01</span>
-                        <span class="hot-month">2019-06</span>
-                    </div>
-                    <div class="hot-right">
-                        <div class="hot-title">
-                            关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
-                        </div>
-                        <div class="hot-content limit-text">
-                            关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
-                        </div>
-                    </div>
-                </div>
-                <ul class="content-area">
-                    <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                    <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                    <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="content-wrap content-item fir">
-            <div class="content-head">
-                <span class="head-title">公告栏</span>
-                <span class="head-more">更多+</span>
-            </div>
             <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            </ul>
-        </div>
-        <div class="content-wrap content-item fir">
-            <div class="content-head">
-                <span class="head-title">公告栏</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            </ul>
-        </div>
-        <div class="content-wrap content-item fir no-padding">
-            <div class="content-head">
-                <span class="head-title">公告栏</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            </ul>
-        </div>
-        <div class="content-wrap content-item fir">
-            <div class="special-area">
-                <div class="special-title"><span class="special-dot">·</span><div class="special-text"> 站点连接</div></div>
-                <div class="special-list">
-                    <span class="special-item special-1">上级工会</span>
-                    <span class="special-item special-2">高校工会</span>
-                    <span class="special-item special-3">其它连接</span>
-                </div>
-                <div class="special-title"><span class="special-dot">·</span><div class="special-text">公共服务</div></div>
-                <div class="special-list">
-                    <span class="special-item special-1">主席信访</span>
-                </div>
-            </div>
-        </div>
-        <div class="content-wrap content-item fir">
-            <div class="content-head">
-                <span class="head-title">公告栏</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            </ul>
-        </div>
-        <div class="content-wrap content-item fir no-padding">
-            <div class="content-head">
-                <span class="head-title">公告栏</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
                 <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
                 <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
                 <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
             </ul>
         </div>
     </div>
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">公告栏</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <ul class="content-area">
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+        </ul>
+    </div>
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">公告栏</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <ul class="content-area">
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+        </ul>
+    </div>
+    <div class="content-wrap content-item fir no-padding">
+        <div class="content-head">
+            <span class="head-title">公告栏</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <ul class="content-area">
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+        </ul>
+    </div>
+    <div class="content-wrap content-item fir">
+        <div class="special-area">
+            <div class="special-title"><span class="special-dot">·</span><div class="special-text"> 站点连接</div></div>
+            <div class="special-list">
+                <span class="special-item special-1">上级工会</span>
+                <span class="special-item special-2">高校工会</span>
+                <span class="special-item special-3">其它连接</span>
+            </div>
+            <div class="special-title"><span class="special-dot">·</span><div class="special-text">公共服务</div></div>
+            <div class="special-list">
+                <span class="special-item special-1">主席信访</span>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">公告栏</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <ul class="content-area">
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+        </ul>
+    </div>
+    <div class="content-wrap content-item fir no-padding">
+        <div class="content-head">
+            <span class="head-title">公告栏</span>
+            <span class="head-more">更多+</span>
+        </div>
+        <ul class="content-area">
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+        </ul>
+    </div>
+</div>
+    <div class="cf"></div>
+<div id="footer">
+
+    <div class="main-footer common-width">
+        <div class="content-wrap footer-left">
+            <div class="content-head">
+                <span class="head-title">下载中心</span>
+                <span class="head-more">更多+</span>
+            </div>
+            <ul class="content-area">
+                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            </ul>
+        </div>
+        <div class="content-wrap footer-right">
+            <div class="content-head">
+                <span class="head-title">社交媒体</span>
+            </div>
+            <div class="content-area">
+                <div class="media-img" style="background:url(__StaticStyle__/image/weixin.png) no-repeat center;background-size: 160px;"></div>
+            </div>
+        </div>
         <div class="cf"></div>
-    <div id="footer">
-
-        <div class="main-footer common-width">
-            <div class="content-wrap footer-left">
-                <div class="content-head">
-                    <span class="head-title">下载中心</span>
-                    <span class="head-more">更多+</span>
-                </div>
-                <ul class="content-area">
-                    <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                    <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                    <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                </ul>
-            </div>
-            <div class="content-wrap footer-right">
-                <div class="content-head">
-                    <span class="head-title">社交媒体</span>
-                </div>
-                <div class="content-area">
-                    <div class="media-img" style="background:url(__StaticStyle__/image/weixin.png) no-repeat center;background-size: 160px;"></div>
-                </div>
-            </div>
-            <div class="cf"></div>
-        </div>
-        <div class="footer-text">
-            皖ICP备020545号 Copyright 2013安徽建筑大学 All Rights Reserved | 安徽建筑大学南
-        </div>
     </div>
+    <div class="footer-text">
+        皖ICP备020545号 Copyright 2013安徽建筑大学 All Rights Reserved | 安徽建筑大学南
+    </div>
+</div>
 </body>
 <script>
-    var mySwiper = new Swiper(".swiper-container", {
-        loop: true,
-        autoplay: 3000,
-        pagination: "ul.slidershow-nav",
-        paginationElement: "li",
-        currentClass: "current",
-    });
+var mySwiper = new Swiper(".swiper-container", {
+    loop: true,
+    autoplay: 3000,
+    pagination: "ul.slidershow-nav",
+    paginationElement: "li",
+    currentClass: "current",
+});
 </script>
 </html>

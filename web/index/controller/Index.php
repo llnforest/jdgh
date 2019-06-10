@@ -22,6 +22,16 @@ class Index extends BaseController{
         return view('index/index');
     }
 
+    //文章列表
+    public function articlelist(){
+        return view('index/list');
+    }
+
+    //文章详情
+    public function articledetail(){
+        return view('index/detail');
+    }
+
     public function nav(){
 
         return view('index/nav');
