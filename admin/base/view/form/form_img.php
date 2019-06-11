@@ -29,7 +29,7 @@
                 <th>封面图片</th>
                 <td>
                     <button name="image" type="button" class="layui-btn upload" lay-data="{'url': '{:url('index/upload/image',['type'=>'cases'])}'}">
-                        <i class="layui-icon">&#xe67c;</i>上传封面图片
+                        <i class="layui-icon">&#xe67c;</i>上传广告图片
                         <input class="image" type="hidden" name="url" value="{$info.url??''}">
                         <img class="mini-image {$info.url?'':'hidden'}" data-path="__ImagePath__" src="{$info.url?'__ImagePath__'.$info.url:''}">
                     </button>

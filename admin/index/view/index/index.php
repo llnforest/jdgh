@@ -19,7 +19,6 @@
         <div class="container-fluid" >
 
             <a href="{:url('index/index')}" class="brand">
-                <img src="__PublicAdmin__/images/logo2.png" alt="__AppName__" style="height:25px">
                 <span style="font-weight:700;font-size: 18px">__AppName__</span>
             </a>
             <div class="pull-left nav_shortcuts" >

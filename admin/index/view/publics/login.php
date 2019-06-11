@@ -11,7 +11,7 @@
 </head>
 <div id="app"></div>
 <div class="m-login">
-    <div class="login-head"><img class="logo" src="__PublicAdmin__/images/logo.png" >__AppName__</div>
+    <div class="login-head">__AppName__</div>
     <form  class="layui-form" id="_form" onsubmit="return false">
             <div class="layui-form-item field-loginform-username required">
                 <input type="text" class="layui-input" name="name"  id="login-name" maxlength="256" placeholder="用户名" value="">
