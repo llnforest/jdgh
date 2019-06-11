@@ -138,8 +138,9 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__PublicAdmin__'   =>'/static/admin',
-        '__PublicDefault__' =>'/static/default',
+        '__AppName__' => '安建大工会管理系统',
+        '__PublicAdmin__'   =>'/jdgh/admin/static/admin',
+        '__PublicDefault__' =>'/jdgh/admin/static/default',
         '__ImagePath__' =>'http://img.website.com',
     ],
     // 默认跳转页面对应的模板文件
