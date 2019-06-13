@@ -12,24 +12,24 @@ use think\Validate;
 
 
 class Mark extends BaseController{
-    private $roleValidate = ['title|标识名称' => 'require','mark|标识' => 'require','sort|排序' => 'number|lt:256'];
+    private $roleValidate = ['title|导航名称' => 'require','mark|标志' => 'require','sort|排序' => 'number|lt:256'];
     //构造函数
     public function __construct(){
         parent::__construct();
     }
 
-    //分类标识列表页
+    //分类导航列表页
     public function index(){
         $orderBy  = 'sort asc';
         if(!empty($this->param['order'])) $orderBy = $this->param['order'].' '.$this->param['by'];
 
-        $data['list'] = BaseMarkModel::order($orderBy)
+        $data['list'] = BaseMarkModel::where(['is_nav' => 1])->order($orderBy)
             ->paginate($this->config_page,'',['query'=>$this->param]);
         $data['page']   = $data['list']->render();
         return view('index',$data);
     }
 
-    //添加分类标识
+    //添加分类导航
     public function markAdd(){
         if($this->request->isPost()){
             $validate = new Validate($this->roleValidate);
@@ -39,7 +39,7 @@ class Mark extends BaseController{
         return view('markAdd');
     }
 
-    //修改分类标识
+    //修改分类导航
     public function markEdit(){
         $data['info'] = BaseMarkModel::get($this->id);
         if(!$data['info']) $this->error(lang('sys_param_error'));
@@ -51,7 +51,7 @@ class Mark extends BaseController{
         return view('markEdit',$data);
     }
 
-    // 删除分类标识
+    // 删除分类导航
     public function markDelete(){
         if($this->request->isPost()) {
             $result = BaseMarkModel::get($this->id);
@@ -62,7 +62,7 @@ class Mark extends BaseController{
         return ['code'=>0,'msg'=>lang('sys_method_error')];
     }
 
-    // 排序分类标识
+    // 排序分类导航
     public function inputMark(){
         if($this->request->isPost()) {
             $result = BaseMarkModel::get($this->id);

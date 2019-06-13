@@ -4,11 +4,23 @@
  * since: 2018/3/23 12:05
  */
 
+if(!function_exists('getYearDay')){
+    /**
+     * 获取日期首部
+     * @param $year 2017-12-23 00:00:00
+     * @return string 2017-12-23
+     */
+    function getYearDay($year){
+        if(!$year) return '';
+        return explode(" ",$year)[0];
+    }
+}
+
 if(!function_exists('getYearNum')){
     /**
      * 获取使用年数
      * @param $start_date 2017-12-23 00:00:00
-     * @return string 2017-12-23
+     * @return string 1
      */
     function getYearNum($start_date){
         if(!$start_date) return '';

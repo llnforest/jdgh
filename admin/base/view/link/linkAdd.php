@@ -1,9 +1,9 @@
 <ul class="nav nav-tabs">
     {if condition="checkPath('link/index')"}
-    <li><a href="{:Url('link/index')}">友情链接列表</a></li>
+    <li><a href="{:Url('link/index')}">站点链接列表</a></li>
     {/if}
     {if condition="checkPath('link/linkAdd')"}
-    <li class="active"><a href="{:Url('link/linkAdd')}">添加友情链接</a></li>
+    <li class="active"><a href="{:Url('link/linkAdd')}">添加站点链接</a></li>
     {/if}
     
 </ul>

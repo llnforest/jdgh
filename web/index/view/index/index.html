@@ -1,195 +1,100 @@
-{include file="public:head" title="demo"
+{include file="public:head"
 css='<link href="__StaticStyle__/css/index.css" rel="stylesheet"><link href="__StaticStyle__/css/swiper.css" rel="stylesheet">'
-js='<script type="text/javascript" src="__StaticStyle__/js/swiper.js"></script>'
+js='<script type="text/javascript" src="__StaticStyle__/js/jquery-3.2.1.min.js"></script><script type="text/javascript" src="__StaticStyle__/js/swiper.js"></script>'
 }
 <body>
 {include file="public:nav"}
 <div class="main-swiper">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <a class="swiper-slide" href=""><img src="__StaticStyle__/image/index_bg1.png" alt="" /></a>
+            {foreach $bannerList as $v}
+            <a class="swiper-slide"><img src="__ImagePath__{$v.url}" alt="{$v.title}" /></a>
+            {/foreach}
         </div>
         <ul class="slidershow-nav">
         </ul>
     </div>
 </div>
 <div class="main-content common-width">
-    <div class="content-wrap content-item fir">
-        <div class="content-head">
-            <span class="head-title">公告栏</span>
-            <span class="head-more">更多+</span>
-        </div>
-        <ul class="content-area">
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-        </ul>
-    </div>
+    {foreach $cateList as $k=>$item}
+    {if $k == 1}
     <div class="content-wrap content-item fir no-padding content-long">
         <div class="content-head">
-            <span class="head-title">工会新闻</span>
-            <span class="head-more">更多+</span>
+            <span class="head-title">{$item.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$item.mark,'type'=>'list'])}" style="overflow: hidden">更多+</a>
         </div>
         <div class="long-left">
-            <div class="long-left-area">
-                <div class="news-img" style="background:url(__StaticStyle__/image/news_bg.png) no-repeat center;"></div>
+            <div class="long-left-area"  onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$item['sublist'][0]['id'],'mark'=>$item.mark,'type'=>'list'])}';">
+                <div class="news-img" style="background:url(__ImagePath__{$item['sublist'][0]['img']}) no-repeat center;"></div>
                 <div class="limit-text news-title">
-                    关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
+                    {$item['sublist'][0]['title']}
                 </div>
             </div>
         </div>
 
         <div class="long-right">
-            <div class="news-hot">
+            <div class="news-hot" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$item['sublist'][0]['id'],'mark'=>$item.mark,'type'=>'list'])}';">
                 <div class="hot-left">
-                    <span class="hot-day">01</span>
-                    <span class="hot-month">2019-06</span>
+                    <?php
+                    $timeArr = explode(' ',$item['sublist'][0]['sendtime']);
+                    $yearArr = explode('-',$timeArr[0]);
+                    ?>
+                    <span class="hot-day">{$yearArr[2]}</span>
+                    <span class="hot-month">{$yearArr[0]}-{$yearArr[1]}</span>
                 </div>
                 <div class="hot-right">
                     <div class="hot-title">
-                        关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
+                        {$item['sublist'][0]['title']}
                     </div>
                     <div class="hot-content limit-text">
-                        关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会
+                        {$item['sublist'][0]['description']}
                     </div>
                 </div>
             </div>
             <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+                {foreach $item.sublist as $a=>$v}
+                {if $a > 0}
+                <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$item.mark,'type'=>'list'])}';"> · {$v.title}<span>{$v.sendtime|getYearDay}</span></li>
+                {/if}
+                {/foreach}
             </ul>
         </div>
     </div>
-    <div class="content-wrap content-item fir">
+    {else}
+    <div class="content-wrap content-item fir {if in_array($k,[4,6])}no-padding {/if}">
         <div class="content-head">
-            <span class="head-title">公告栏</span>
-            <span class="head-more">更多+</span>
+            <span class="head-title">{$item.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$item.mark,'type'=>'list'])}">更多+</a>
         </div>
         <ul class="content-area">
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+            {foreach $item.sublist as $v}
+            <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$item.mark,'type'=>'list'])}';"> · {$v.title}{if in_array($k,[4,6])}<span>{$v.sendtime|getYearDay}</span> {/if}</li>
+            {/foreach}
         </ul>
     </div>
-    <div class="content-wrap content-item fir">
-        <div class="content-head">
-            <span class="head-title">公告栏</span>
-            <span class="head-more">更多+</span>
-        </div>
-        <ul class="content-area">
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-        </ul>
-    </div>
-    <div class="content-wrap content-item fir no-padding">
-        <div class="content-head">
-            <span class="head-title">公告栏</span>
-            <span class="head-more">更多+</span>
-        </div>
-        <ul class="content-area">
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-        </ul>
-    </div>
+    {/if}
+    {if $k == 4}
     <div class="content-wrap content-item fir">
         <div class="special-area">
             <div class="special-title"><span class="special-dot">·</span><div class="special-text"> 站点连接</div></div>
             <div class="special-list">
-                <span class="special-item special-1">上级工会</span>
-                <span class="special-item special-2">高校工会</span>
-                <span class="special-item special-3">其它连接</span>
+                {foreach $linkList as $k=>$item}
+                <a class="special-item special-{$k+1}" href="{:url('index/articlelist',['mark'=>$item.mark,'cate_id'=>$item.id,'type'=>'list'])}">{$item.name}</a>
+                {/foreach}
             </div>
             <div class="special-title"><span class="special-dot">·</span><div class="special-text">公共服务</div></div>
             <div class="special-list">
-                <span class="special-item special-1">主席信访</span>
+                <a class="special-item special-1" href="{:url('index/articlelist',['mark'=>'Message','type'=>'list'])}">主席信访</a>
             </div>
         </div>
     </div>
-    <div class="content-wrap content-item fir">
-        <div class="content-head">
-            <span class="head-title">公告栏</span>
-            <span class="head-more">更多+</span>
-        </div>
-        <ul class="content-area">
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-        </ul>
-    </div>
-    <div class="content-wrap content-item fir no-padding">
-        <div class="content-head">
-            <span class="head-title">公告栏</span>
-            <span class="head-more">更多+</span>
-        </div>
-        <ul class="content-area">
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-            <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-        </ul>
-    </div>
-</div>
-    <div class="cf"></div>
-<div id="footer">
+    {/if}
 
-    <div class="main-footer common-width">
-        <div class="content-wrap footer-left">
-            <div class="content-head">
-                <span class="head-title">下载中心</span>
-                <span class="head-more">更多+</span>
-            </div>
-            <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-            </ul>
-        </div>
-        <div class="content-wrap footer-right">
-            <div class="content-head">
-                <span class="head-title">社交媒体</span>
-            </div>
-            <div class="content-area">
-                <div class="media-img" style="background:url(__StaticStyle__/image/weixin.png) no-repeat center;background-size: 160px;"></div>
-            </div>
-        </div>
-        <div class="cf"></div>
-    </div>
-    <div class="footer-text">
-        皖ICP备020545号 Copyright 2013安徽建筑大学 All Rights Reserved | 安徽建筑大学南
-    </div>
+    {/foreach}
+
+
 </div>
+{include file="public:footer"}
 </body>
 <script>
 var mySwiper = new Swiper(".swiper-container", {

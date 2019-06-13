@@ -18,7 +18,7 @@ class Message extends BaseController{
     public function index(){
         $orderBy = "sendtime desc";
         if(!empty($this->param['order'])) $orderBy = $this->param['order'].' '.$this->param['by'];
-        $where  = getWhereParam(['name'=>'like'],$this->param);
+        $where  = getWhereParam(['name'=>'like','phone'=>'like','message'=>'like'],$this->param);
         $data['list'] = BaseMessageModel::where($where)
             ->order($orderBy)
             ->paginate($this->config_page,'',['query'=>$this->param]);
@@ -26,6 +26,17 @@ class Message extends BaseController{
         $data['unread_num'] = BaseMessageModel::where("isstate",0)->count();
         return view('index',$data);
 
+    }
+
+    //修改信息
+    public function messageEdit(){
+        $data['info'] = BaseMessageModel::get($this->id);
+        if(!$data['info']) $this->error(lang('sys_param_error'));
+        if($this->request->isPost()){
+            $data['info']->save($this->param);
+            return operateResult(true,'message/index','edit');
+        }
+        return view('messageEdit',$data);
     }
 
      // 删除留言
@@ -45,7 +56,7 @@ class Message extends BaseController{
         if($this->request->isPost()) {
             $result = BaseMessageModel::get($this->id);
             if (empty($result)) return ['code' => 0, 'msg' => lang('sys_param_error')];
-            return operateResult($result->save(['isstate' => 1]),'message/index','status');
+            return operateResult($result->save(['isstate' => 1,'re_time'=>date('Y-m-d H:i:s',time())]),'message/index','status');
             
         }
         return ['code'=>0,'msg'=>lang('sys_method_error')];
@@ -68,7 +79,7 @@ class Message extends BaseController{
             $result = BaseMessageModel::all($this->param['ids']);
             if (empty($result)) return ['code' => 0, 'msg' => lang('sys_param_error')];
             foreach ($this->param['ids'] as $v){
-                $data = BaseMessageModel::where('id',$v)->update(['isstate'=>1]);
+                $data = BaseMessageModel::where('id',$v)->update(['isstate'=>1,'re_time'=>date('Y-m-d H:i:s',time())]);
             }
             return operateResult($data,'message/index','status');
         }

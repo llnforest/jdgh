@@ -21,29 +21,34 @@ class Upload extends BaseController{
     }
 
     // 上传图片
-	public function image(){
-		// 获取表单上传文件 例如上传了001.jpg
+	public function image()
+    {
+        // 获取表单上传文件 例如上传了001.jpg
         $file = request()->file('file');
-        $type = isset($this->param['type'])?$this->param['type']:'';
-        if($type == 'info')
+        $type = isset($this->param['type']) ? $this->param['type'] : '';
+        if ($type == 'info')
             $baseUrl = DS . 'images' . DS . 'info';
-        else if($type == 'service')
-            $baseUrl = DS . 'images' . DS .'service';
-        else if($type == 'cases')
-            $baseUrl = DS . 'images' . DS .'cases';
-        else if($type == 'partner')
-            $baseUrl = DS . 'images' . DS .'partner';
-        else if($type == 'contact')
-            $baseUrl = DS . 'images' . DS .'contact';
-        else if($type == 'product')
-            $baseUrl = DS . 'images' . DS .'product';
-        else if($type == 'service')
-            $baseUrl = DS . 'images' . DS .'service';
-        else if($type == 'content')
-            $baseUrl = DS . 'images' . DS .'content';
+        else if ($type == 'service')
+            $baseUrl = DS . 'images' . DS . 'service';
+        else if ($type == 'cases')
+            $baseUrl = DS . 'images' . DS . 'cases';
+        else if ($type == 'partner')
+            $baseUrl = DS . 'images' . DS . 'partner';
+        else if ($type == 'contact')
+            $baseUrl = DS . 'images' . DS . 'contact';
+        else if ($type == 'product')
+            $baseUrl = DS . 'images' . DS . 'product';
+        else if ($type == 'service')
+            $baseUrl = DS . 'images' . DS . 'service';
+        else if ($type == 'content')
+            $baseUrl = DS . 'images' . DS . 'content';
+        else if ($type == 'xiazai')
+            $baseUrl = DS . 'images' . DS . 'xiazai';
         // 移动到框架应用根目录/public/uploads/ 目录下
-        if(in_array($type,['info','service','cases','partner','contact','product','service','content'])){
-            $info = $file->validate(['size'=>5*1024*1024,'ext'=>'jpg,png,gif,jpeg'])->move(Config::get('upload.path') . DS . $baseUrl);
+        if (in_array($type, ['info', 'service', 'cases', 'partner', 'contact', 'product', 'service', 'content'])) {
+            $info = $file->validate(['size' => 5 * 1024 * 1024, 'ext' => 'jpg,png,gif,jpeg'])->move(Config::get('upload.path') . DS . $baseUrl);
+        }elseif($type == "xiazai"){
+            $info = $file->validate(['size' => 5 * 1024 * 1024, 'ext' => 'zip,rar,gzip,doc,docx,xlsx,xls,txt'])->move(Config::get('upload.path') . DS . $baseUrl);
         }elseif($type == "house"){
             $info = $file->validate(['size'=>5*1024*1024,'ext'=>'jpg,png,gif,jpeg'])->size(200,160)->move(Config::get('upload.path') . DS .  $baseUrl);
         }

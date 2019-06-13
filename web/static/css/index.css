@@ -24,6 +24,7 @@
     text-overflow:ellipsis;
     white-space:nowrap;
     line-height:30px;
+    cursor:pointer;
 }
 .no-padding .content-list{
     padding-right:100px;
@@ -42,6 +43,7 @@
 .content-item .long-left-area{
     border:1px solid #ddd;
     height:240px;
+    cursor:pointer;
 }
 .content-item .long-right{
     width:57%;
@@ -61,6 +63,7 @@
     height:125px;
     margin-bottom:15px;
     background-color:#f8f8f8;
+    cursor:pointer;
 }
 .content-item .news-hot .hot-day{
     color:#044fa0;

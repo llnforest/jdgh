@@ -1,14 +1,14 @@
-.content-list span {
+.content-list span.list-time {
     position: absolute;
     color: #666;
     right: 0px;
 }
-
 .no-padding .content-list {
     padding-right: 100px;
     position: relative;
     border-bottom: 1px dotted #666;
     line-height: 40px;
+    cursor:pointer;
 }
 .content-list-wrap{
     width:100%;
@@ -25,4 +25,32 @@
 .nav-content a{
     font-size:14px;
     color:#666;
+}
+.page{
+    text-align:center;
+}
+.un-re{
+    margin-left:10px;
+    color:#ccc;
+    font-size: 12px;
+}
+.ed-re{
+    margin-left:10px;
+    color:#044fa0;
+    font-size: 12px;
+}
+.send-message{
+    height: 31px;
+    width: 100px;
+    text-align: center;
+    line-height: 31px;
+    border: 1px solid #044fa0;
+    background: #044fa0;
+    font-size: 12px;
+    color: #fff;
+    float: right;
+}
+.send-message:hover{
+    color:#fff;
+    text-decoration: none;
 }

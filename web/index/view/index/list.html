@@ -1,27 +1,27 @@
-{include file="public:head" title="list"
-css='<link href="__StaticStyle__/css/list.css" rel="stylesheet">'
+{include file="public:head"
+css='<link href="__StaticStyle__/css/list.css" rel="stylesheet"><link href="__StaticStyle__/css/bootstrap.min.css" rel="stylesheet">'
 js=''
 }
 <body>
     {include file="public:nav"}
     <div class="nav-content common-width">
-        <a>首页</a> > 公告栏
+        <a href="{:url('index/index')}">首页</a> > <a href="{:url('index/articlelist',['mark'=>$mark.mark,'type'=>$type])}">{$mark.title}</a>{if isset($cate)} > <a href="{:url('index/articlelist',['mark'=>$mark.mark,'type'=>$type,'cate_id'=>$cate.id])}">{$cate.name}</a>{/if}
     </div>
     <div class="main-content common-width">
         <div class="content-wrap content-item fir no-padding content-list-wrap">
             <div class="content-head">
-                <span class="head-title">公告栏</span>
+                <span class="head-title">{if isset($cate)}{$cate.name}{else}{$mark.title}{/if}</span>
+                {if $mark.mark == 'Message'}<a href="{:url('index/sendmessage')}" class="send-message">写信件</a>{/if}
             </div>
             <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会<span>2019-06-01</span></li>
+                {foreach $list as $v}
+                <li class="content-list limit-text" {if $mark.mark == 'Xiazai'}onclick="javascript:window.location.href='{:url("index/downfile",['id'=>$v.id])}';"{elseif $mark.mark == 'Link'}onclick="javascript:window.location.href='{$v.linkurl}';"{else}onclick="javascript:window.location.href='{:url("index/articledetail",['mark'=>$mark.mark,'id'=>$v.id,'type'=>$type])}';"{/if}> · {$v.title} {if $mark.mark=='Link'}{elseif $mark.mark=='Message'}<span class="{$v.isstate==0?'un-re':'ed-re'}">[{$v.isstate==0?'未回复':'已回复'}]</span><span class="list-time">{$v.sendtime|date="Y-m-d",###}</span>{else}<span class="list-time">{$v.sendtime|getYearDay}</span>{/if}</li>
+                {/foreach}
             </ul>
+            <div class="page">
+
+            {$page}
+            </div>
         </div>
     </div>
     {include file="public:footer"}

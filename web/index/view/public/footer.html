@@ -5,12 +5,12 @@
         <div class="content-wrap footer-left">
             <div class="content-head">
                 <span class="head-title">下载中心</span>
-                <span class="head-more">更多+</span>
+                <a class="head-more" href="{:url('index/articlelist',['mark'=>'Xiazai','type'=>'list'])}">更多+</a>
             </div>
             <ul class="content-area">
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
-                <li class="content-list"> · 关于举办2019级安徽建筑工业大学教职工奖章授予表彰大会</li>
+                {foreach $download as $v}
+                <li class="content-list" onclick="javascript:window.location.href='{:url("index/downfile",['id'=>$v.id])}';"> · {$v.title}</li>
+                {/foreach}
             </ul>
         </div>
         <div class="content-wrap footer-right">
@@ -18,12 +18,12 @@
                 <span class="head-title">社交媒体</span>
             </div>
             <div class="content-area">
-                <div class="media-img" style="background:url(__StaticStyle__/image/weixin.png) no-repeat center;background-size: 160px;"></div>
+                <div class="media-img" style="background:url(__ImagePath__{$info.wx_url}) no-repeat center;background-size: 160px;"></div>
             </div>
         </div>
         <div class="cf"></div>
     </div>
     <div class="footer-text">
-        皖ICP备020545号 Copyright 2013安徽建筑大学 All Rights Reserved | 安徽建筑大学南
+        {$info.case_info} | {$info.power} | 安徽建筑大学南
     </div>
 </div>

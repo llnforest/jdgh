@@ -5,11 +5,13 @@ js=''
 <body>
     {include file="public:nav"}
     <div class="nav-content common-width">
-        <a>首页</a> > <a>公告栏</a> > 建大徐盛演讲稿
+        <a href="{:url('index/index')}">首页</a> > <a href="{:url('index/articlelist',['mark'=>$mark.mark,'type'=>$type])}">{$mark.title}</a>{if isset($cate)} > <a href="{:url('index/articlelist',['mark'=>$mark.mark,'type'=>$type,'cate_id'=>$cate.id])}">{$cate.name}</a>{/if}
     </div>
     <div class="main-content common-width">
         <div class="content-wrap content-item  content-list-wrap">
-
+            <div class="content-title">{$content.title}</div>
+            <div class="content-time">发布时间：{$content.sendtime}</div>
+            <div class="content-content">{$content.content}</div>
         </div>
     </div>
     {include file="public:footer"}

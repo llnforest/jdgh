@@ -3,6 +3,19 @@
     <table class="table table-bordered">
         <tbody>
             <tr>
+                <th>链接分类</th>
+                <td>
+                    <div class="layui-form select">
+                        <select name="cate_id" class="form-control text">
+                            {foreach $cateList as $item}
+                            <option value="{$item.id}" {if input('cate_id') == $item.id}selected{/if}>{$item.name}</option>
+                            {/foreach}
+                        </select>
+                    </div>
+                    <span class="form-required">*</span>
+                </td>
+            </tr>
+            <tr>
                 <th>网站名称</th>
                 <td>
                     <input class="form-control text" type="text" name="name" value="{$info.name??''}" placeholder="网站名称">

@@ -1,9 +1,9 @@
 <ul class="nav nav-tabs">
     {if condition="checkPath('mark/index')"}
-    <li class="active"><a href="{:Url('mark/index')}">分类标识列表</a></li>
+    <li class="active"><a href="{:Url('mark/index')}">导航列表</a></li>
     {/if}
     {if condition="checkPath('mark/markAdd')"}
-    <li><a href="{:Url('mark/markAdd')}">添加分类标识</a></li>
+    <li><a href="{:Url('mark/markAdd')}">添加导航</a></li>
     {/if}
 </ul>
  <div class="layui-form">
@@ -12,7 +12,7 @@
             <thead>
             <tr>
                 <th width="15"><input type="checkbox"  lay-skin="primary" lay-filter="allChoose">
-                <th width="80">标识名称</th>
+                <th width="80">导航名称</th>
                 <th width="80">标识</th>
                 <th width="80">排序<span order="sort" class="order-sort"> </span></th>
                 <th width="80">操作</th>

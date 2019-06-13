@@ -6,6 +6,7 @@
 namespace admin\base\controller;
 
 use admin\index\controller\BaseController;
+use model\BaseContentCategoryModel;
 use model\BaseLinkModel;
 use think\Config;
 use think\Validate;
@@ -20,12 +21,19 @@ class Link extends BaseController{
 
     //友情链接列表页
     public function index(){
-        $orderBy  = 'sort asc';
+        $orderBy  = 'b.sort asc,a.sort asc';
+        $where  = getWhereParam(['a.name'=>'like','a.cate_id'],$this->param);
         if(!empty($this->param['order'])) $orderBy = $this->param['order'].' '.$this->param['by'];
 
-        $data['list'] = BaseLinkModel::order($orderBy)
+        $data['list'] = BaseLinkModel::alias('a')
+            ->join('tp_base_content_category b','a.cate_id = b.id','left')
+            ->where($where)
+            ->field('a.*,b.name as cate_name')
+            ->order($orderBy)
             ->paginate($this->config_page,'',['query'=>$this->param]);
         $data['page']   = $data['list']->render();
+        $cateList = BaseContentCategoryModel::order('sort asc')->where(['mark'=>'Link'])->select();
+        $this->assign('cateList',$cateList);
         return view('index',$data);
     }
 
@@ -36,6 +44,8 @@ class Link extends BaseController{
             if(!$validate->check($this->param)) return ['code' => 0, 'msg' => $validate->getError()];
             return operateResult(BaseLinkModel::create($this->param),'link/index','add');
         }
+        $cateList = BaseContentCategoryModel::order('sort asc')->where(['mark'=>'Link'])->select();
+        $this->assign('cateList',$cateList);
         return view('linkAdd');
     }
 
@@ -48,6 +58,8 @@ class Link extends BaseController{
             if(!$validate->check($this->param)) return ['code' => 0,'msg' => $validate->getError()];
             return operateResult($data['info']->save($this->param),'link/index','edit');
         }
+        $cateList = BaseContentCategoryModel::order('sort asc')->where(['mark'=>'Link'])->select();
+        $this->assign('cateList',$cateList);
         return view('linkEdit',$data);
     }
 

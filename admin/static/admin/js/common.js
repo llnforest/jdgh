@@ -101,6 +101,32 @@ layui.use('upload', function(){
     }
 
     //执行实例，上传图片
+    $(function(){
+        if($(".upload-file").length > 0){
+            upload.render({
+                elem: '.upload-file' //绑定元素
+                ,field: 'file'
+                ,accept:'file'
+                ,size:0
+                ,before:function(){
+                    loading = layer.load(2, {
+                        shade: [0.1,'#fff'] //0.1透明度的白色背景
+                    });
+                }
+                ,done: function(res,index,upload){
+                    //上传完毕回调
+                    $(this)[0].item.find(".image").val(res.url);
+                    layer.close(loading);
+                }
+                ,error: function(index,upload){
+                    //请求异常回调
+                    console.log('wrong');
+                }
+            });
+        }
+    })
+
+    //执行实例，上传图片
     if($(".import").length > 0) {
         upload.render({
             elem: '.import' //绑定元素

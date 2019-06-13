@@ -3,7 +3,7 @@
     <table class="table table-bordered">
         <tbody>
             <tr>
-                <th>标识名称</th>
+                <th>导航名称</th>
                 <td>
                     <input class="form-control text" type="text" name="title" value="{$info.title??''}" placeholder="标识名称">
                 </td>

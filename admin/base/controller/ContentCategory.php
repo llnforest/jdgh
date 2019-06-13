@@ -24,7 +24,7 @@ class ContentCategory extends BaseController{
 
     //信息分类列表页
     public function index(){
-        $orderBy  = 'sort asc';
+        $orderBy  = 'b.sort asc,a.sort asc';
         $where  = getWhereParam(['a.name'=>'like','a.mark'],$this->param);
         if(!empty($this->param['order'])) $orderBy = $this->param['order'].' '.$this->param['by'];
 

@@ -243,7 +243,7 @@ return [
         'type'      => 'bootstrap',
         'var_page'  => 'page',
         'list_rows' => 15,
-        'input'     => true,
+        'input'     => false,
     ],
 
    'thinkcms' =>[
@@ -260,6 +260,6 @@ return [
     ],
     'upload'        =>[
         'path'      =>  '../public',
-        'img_url'   => 'http://192.168.0.102/public'
+        'img_url'   => 'http://img.website.com'
     ]
 ];

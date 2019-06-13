@@ -16,6 +16,18 @@
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     color:#bbb;
 }
+a:link{
+    text-decoration: none !important;
+}
+a:visited{
+    text-decoration: none !important;;
+}
+a:hover{
+    text-decoration: none !important;;
+}
+a:active{
+    text-decoration: none !important;;
+}
 ul,li{
     list-style: none;
     text-align: left;
@@ -111,6 +123,7 @@ a,span,p{
     border-bottom:1px dashed #666;
     line-height:50px;
     height:50px;
+    cursor:pointer;
 }
 .footer-text{
     background-color:#044fa0;
@@ -126,6 +139,6 @@ a,span,p{
     margin-left: 20px;
 }
 .main-nav{
-    padding-left:300px;
+    padding-left:290px;
     position:relative;
 }

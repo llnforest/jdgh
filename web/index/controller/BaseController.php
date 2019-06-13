@@ -2,6 +2,10 @@
 namespace web\index\controller;
 
 
+use model\BaseContentCategoryModel;
+use model\BaseContentModel;
+use model\BaseImgModel;
+use model\BaseMarkModel;
 use think\Config;
 use think\Controller;
 use think\Request;
@@ -39,8 +43,19 @@ class BaseController extends Controller
 
         //网站基本配置信息
         $web_config=BaseInfoModel::where('id',1)->find();
-        $this->assign('web_config',$web_config);
-
+        $this->assign('info',$web_config);
+        //顶部页面
+        $this->assign('topImg',BaseImgModel::get(['position_id'=>36]));
+        //当前时间
+        $weekarray=array("日","一","二","三","四","五","六");
+        $this->assign('nowTime',date('Y年m月d日',time()).' 星期'.$weekarray[date('w',time())]);
+        $navList = BaseMarkModel::where(['is_nav' => 1])->order('sort asc')->select();
+        foreach($navList as &$v){
+            $v['sub'] = BaseContentCategoryModel::where(['mark'=>$v['mark']])->order('sort asc')->select();
+        }
+        $this->assign('navList',$navList);
+        $download = BaseContentModel::where(['mark'=>'Xiazai'])->order('sort asc')->limit(3)->select();
+        $this->assign('download',$download);
 
     }
 
