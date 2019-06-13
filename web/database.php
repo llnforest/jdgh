@@ -17,13 +17,13 @@ return [
     'dsn'         => '',
 
     // 服务器地址
-   'hostname'    => '127.0.0.1',
+   'hostname'    => '106.15.205.240',
    // 数据库名
    'database'    => 'jdgh',
    // 数据库用户名
    'username'    => 'root',
    // 数据库密码
-   'password'    => '',
+   'password'    => 'cdh.121540!',
 
     // 数据库连接端口
     'hostport'    => '',

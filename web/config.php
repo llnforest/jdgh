@@ -142,9 +142,9 @@ return [
 
     // // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__StaticStyle__'   =>'/jdgh/web/static',
-        '__PublicDefault__' =>'/static/default',
-        '__ImagePath__' =>'http://img.website.com',
+        '__StaticStyle__'   =>'/web/static',
+        '__ImagePath__' =>'/public',
+//        '__ImagePath__' =>'http://img.website.com',
     ],
 
   
@@ -260,6 +260,6 @@ return [
     ],
     'upload'        =>[
         'path'      =>  '../public',
-        'img_url'   => 'http://img.website.com'
+        'img_url'   => 'http://www.dehengfalv.com/public'
     ]
 ];

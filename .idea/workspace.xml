@@ -2,84 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5de1e6ad-383f-4d04-8af1-7e2fad8471b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Gaikuang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Gonggao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Jiceng.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Minzhu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Xiazai.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Xinxi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Yaowen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/controller/Zhengce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_gaikuang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_gonggao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_jiceng.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_minzhu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_xiazai.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_xinxi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_yaowen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/form/form_zhengce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/gaikuang/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/gaikuang/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/gaikuang/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/gonggao/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/gonggao/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/gonggao/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/jiceng/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/jiceng/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/jiceng/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/message/messageEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/minzhu/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/minzhu/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/minzhu/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/xinxi/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/xinxi/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/xinxi/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/yaowen/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/yaowen/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/yaowen/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/zhengce/contentAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/zhengce/contentEdit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/base/view/zhengce/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index/view/index/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index/view/index/sendmessage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/css/sendmessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/controller/ContentCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/controller/ContentCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/controller/Link.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/controller/Link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/controller/Mark.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/controller/Mark.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/controller/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/controller/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/form/form_link.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/form/form_link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/form/form_mark.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/form/form_mark.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/link/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/link/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/link/linkAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/link/linkAdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/link/linkEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/link/linkEdit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/mark/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/mark/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/mark/markAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/mark/markAdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/mark/markEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/mark/markEdit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/base/view/message/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/base/view/message/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index/controller/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index/controller/Upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/admin/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/static/admin/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/static/admin/ueditor/php/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/static/admin/ueditor/php/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/static/admin/ueditor/ueditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/static/admin/ueditor/ueditor.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/controller/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/view/index/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/view/index/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/view/index/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/view/index/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/view/public/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/view/public/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/view/public/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/view/public/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index/view/public/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index/view/public/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/index_bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/index_header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/news_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/database.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,32 +23,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index/controller/Index.php">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="29" column="161" selection-start-line="29" selection-start-column="161" selection-end-line="29" selection-end-column="161" />
-              <folding>
-                <element signature="e#89#113#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="297">
+              <caret line="238" column="6" lean-forward="true" selection-start-line="238" selection-start-column="6" selection-end-line="238" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index/view/index/message.html">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="180">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="127" selection-start-line="23" selection-start-column="127" selection-end-line="23" selection-end-column="127" />
+            <state relative-caret-position="486">
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -129,32 +74,18 @@
       </file>
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/static/admin/ueditor/php/config.json">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="ueditor.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/static/admin/ueditor/ueditor.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index/view/public/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="47" selection-start-column="47" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/static/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -228,6 +159,7 @@
       <find>:hover</find>
       <find>.layui-layer-content</find>
       <find>ueditorimage</find>
+      <find>www.website.com</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -254,8 +186,8 @@
     <dirStrings>
       <dir>E:\web\jdgh\admin</dir>
       <dir>E:\web\jdgh\admin\base\view</dir>
-      <dir>E:\web\jdgh</dir>
       <dir>E:\web\jdgh\admin\static\admin\ueditor</dir>
+      <dir>E:\web\jdgh</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -264,11 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/base/controller/Minzhu.php" />
-        <option value="$PROJECT_DIR$/admin/base/view/minzhu/index.php" />
-        <option value="$PROJECT_DIR$/admin/base/view/minzhu/contentEdit.php" />
-        <option value="$PROJECT_DIR$/admin/base/view/minzhu/contentAdd.php" />
-        <option value="$PROJECT_DIR$/admin/base/view/yaowen/contentAdd.php" />
         <option value="$PROJECT_DIR$/admin/base/view/yaowen/contentEdit.php" />
         <option value="$PROJECT_DIR$/admin/base/view/zhengce/contentAdd.php" />
         <option value="$PROJECT_DIR$/admin/base/view/zhengce/contentEdit.php" />
@@ -299,7 +226,6 @@
         <option value="$PROJECT_DIR$/web/index/view/public/nav.html" />
         <option value="$PROJECT_DIR$/web/helper.php" />
         <option value="$PROJECT_DIR$/web/static/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/web/config.php" />
         <option value="$PROJECT_DIR$/web/index/view/index/detail.html" />
         <option value="$PROJECT_DIR$/web/index/controller/BaseController.php" />
         <option value="$PROJECT_DIR$/web/index/view/public/footer.html" />
@@ -315,6 +241,12 @@
         <option value="$PROJECT_DIR$/web/static/css/list.css" />
         <option value="$PROJECT_DIR$/web/static/css/common.css" />
         <option value="$PROJECT_DIR$/web/index/view/index/index.html" />
+        <option value="$PROJECT_DIR$/web/config.php" />
+        <option value="$PROJECT_DIR$/admin/config.php" />
+        <option value="$PROJECT_DIR$/admin/static/admin/ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/admin/static/admin/ueditor/php/config.json" />
+        <option value="$PROJECT_DIR$/admin/database.php" />
+        <option value="$PROJECT_DIR$/web/database.php" />
       </list>
     </option>
   </component>
@@ -374,183 +306,7 @@
             <path>
               <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
               <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="extend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="extend" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="20190611" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="layer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdgh" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="layer" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="jdgh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="standard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -569,11 +325,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\web\jdgh" />
       <recent name="E:\web\jdgh\web\static" />
       <recent name="E:\web\jdgh\web\static\css" />
       <recent name="E:\web\jdgh\web\index\view\index" />
       <recent name="E:\web\jdgh\admin\base\view" />
-      <recent name="E:\web\jdgh\admin\base\view\form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\web\jdgh\web\static" />
@@ -609,12 +365,12 @@
       <workItem from="1560220845715" duration="14013000" />
       <workItem from="1560304794896" duration="21992000" />
       <workItem from="1560340305013" duration="1201000" />
-      <workItem from="1560387019495" duration="19930000" />
+      <workItem from="1560387019495" duration="22224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85675000" />
+    <option name="totallyTimeSpent" value="87969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -648,27 +404,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/base/view/form/form_gonggao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/base/view/message/messageEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/base/controller/Gonggao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/base/controller/Message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -793,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4176">
-          <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/static/admin/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -824,13 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="2743" column="30" selection-start-line="2743" selection-start-column="30" selection-end-line="2743" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="262" column="16" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -934,16 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/static/admin/ueditor/php/config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/static/admin/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/css/detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -967,12 +678,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="127" selection-start-line="23" selection-start-column="127" selection-end-line="23" selection-end-column="127" />
+        <state relative-caret-position="486">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/static/admin/ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/static/admin/ueditor/php/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="238" column="6" lean-forward="true" selection-start-line="238" selection-start-column="6" selection-end-line="238" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
         </state>
       </provider>
     </entry>
