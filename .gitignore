@@ -1,6 +1,7 @@
 # 忽略提交文件
 runtime
 admin/database.php
+admin/config.php
 admin/static/admin/*
 web/config.php
 web/database.php
