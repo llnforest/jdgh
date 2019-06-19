@@ -4,7 +4,7 @@ js='<script type="text/javascript" src="__StaticStyle__/js/jquery-3.2.1.min.js">
 }
 <body>
 {include file="public:nav"}
-<div class="main-swiper">
+<div class="main-swiper common-width">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             {foreach $bannerList as $v}
@@ -16,81 +16,166 @@ js='<script type="text/javascript" src="__StaticStyle__/js/jquery-3.2.1.min.js">
     </div>
 </div>
 <div class="main-content common-width">
-    {foreach $cateList as $k=>$item}
-    {if $k == 1}
+    <!--fir-->
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">{$cateList.Gonggao.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Gonggao.mark,'type'=>'list'])}">更多+</a>
+        </div>
+        <ul class="content-area">
+            {foreach $cateList.Gonggao.sublist as $v}
+            <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$v.mark,'type'=>'list'])}';"> · {$v.title}</li>
+            {/foreach}
+        </ul>
+    </div>
+
+    <!--sec-->
     <div class="content-wrap content-item fir no-padding content-long">
         <div class="content-head">
-            <span class="head-title">{$item.title}</span>
-            <a class="head-more" href="{:url('index/articlelist',['mark'=>$item.mark,'type'=>'list'])}" style="overflow: hidden">更多+</a>
+            <span class="head-title">{$cateList.Yaowen.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Yaowen.mark,'type'=>'list'])}" style="overflow: hidden">更多+</a>
         </div>
         <div class="long-left">
-            <div class="long-left-area"  onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$item['sublist'][0]['id'],'mark'=>$item.mark,'type'=>'list'])}';">
-                <div class="news-img" style="background:url(__ImagePath__{$item['sublist'][0]['img']}) no-repeat center;"></div>
+            <div class="long-left-area"  onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$cateList.Yaowen['sublist'][0]['id'],'mark'=>$cateList.Yaowen.mark,'type'=>'list'])}';">
+                <div class="news-img" style="background:url(__ImagePath__{$cateList.Yaowen['sublist'][0]['img']}) no-repeat center;"></div>
                 <div class="limit-text news-title">
-                    {$item['sublist'][0]['title']}
+                    {$cateList.Yaowen['sublist'][0]['title']}
                 </div>
             </div>
         </div>
 
         <div class="long-right">
-            <div class="news-hot" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$item['sublist'][0]['id'],'mark'=>$item.mark,'type'=>'list'])}';">
+            <div class="news-hot" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$cateList.Yaowen['sublist'][0]['id'],'mark'=>$cateList.Yaowen.mark,'type'=>'list'])}';">
                 <div class="hot-left">
                     <?php
-                    $timeArr = explode(' ',$item['sublist'][0]['sendtime']);
-                    $yearArr = explode('-',$timeArr[0]);
-                    ?>
+                            $timeArr = explode(' ',$cateList['Yaowen']['sublist'][0]['sendtime']);
+                            $yearArr = explode('-',$timeArr[0]);
+                            ?>
                     <span class="hot-day">{$yearArr[2]}</span>
                     <span class="hot-month">{$yearArr[0]}-{$yearArr[1]}</span>
                 </div>
                 <div class="hot-right">
                     <div class="hot-title">
-                        {$item['sublist'][0]['title']}
+                        {$cateList.Yaowen['sublist'][0]['title']}
                     </div>
                     <div class="hot-content limit-text">
-                        {$item['sublist'][0]['description']}
+                        {$cateList.Yaowen['sublist'][0]['description']}
                     </div>
                 </div>
             </div>
             <ul class="content-area">
-                {foreach $item.sublist as $a=>$v}
+                {foreach $cateList.Yaowen.sublist as $a=>$v}
                 {if $a > 0}
-                <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$item.mark,'type'=>'list'])}';"> · {$v.title}<span>{$v.sendtime|getYearDay}</span></li>
+                <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$v.mark,'type'=>'list'])}';"> · {$v.title}<span>{$v.sendtime|getYearDay}</span></li>
                 {/if}
                 {/foreach}
             </ul>
         </div>
     </div>
-    {else}
-    <div class="content-wrap content-item fir {if in_array($k,[4,6])}no-padding {/if}">
+    <!--thr-->
+    <div class="content-wrap content-item fir">
         <div class="content-head">
-            <span class="head-title">{$item.title}</span>
-            <a class="head-more" href="{:url('index/articlelist',['mark'=>$item.mark,'type'=>'list'])}">更多+</a>
+            <span class="head-title">{$cateList.Zhengce.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Zhengce.mark,'type'=>'list'])}">更多+</a>
         </div>
         <ul class="content-area">
-            {foreach $item.sublist as $v}
-            <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$item.mark,'type'=>'list'])}';"> · {$v.title}{if in_array($k,[4,6])}<span>{$v.sendtime|getYearDay}</span> {/if}</li>
+            {foreach $cateList.Zhengce.sublist as $v}
+            <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$v.mark,'type'=>'list'])}';"> · {$v.title}</li>
             {/foreach}
         </ul>
     </div>
-    {/if}
-    {if $k == 4}
+
+    <!--four-->
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">{$cateList.Minzhu.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Minzhu.mark,'type'=>'list'])}">更多+</a>
+        </div>
+        <ul class="content-area">
+            {foreach $cateList.Minzhu.sublist as $v}
+            <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$v.mark,'type'=>'list'])}';"> · {$v.title}</li>
+            {/foreach}
+        </ul>
+    </div>
+
+    <!--five-->
+    <div class="content-wrap content-item fir no-padding">
+        <div class="content-head">
+            <span class="head-title">{$cateList.Yangguang.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Yangguang.mark,'type'=>'list'])}">更多+</a>
+        </div>
+        <ul class="content-area">
+            {foreach $cateList.Yangguang.sublist as $v}
+            <li class="content-list" onclick="javascript:window.location.href='{:url("index/articledetail",['id'=>$v.id,'mark'=>$v.mark,'type'=>'list'])}';"> · {$v.title}<span>{$v.sendtime|getYearDay}</span> </li>
+            {/foreach}
+        </ul>
+    </div>
+
+    <!--six-->
     <div class="content-wrap content-item fir">
         <div class="special-area">
-            <div class="special-title"><span class="special-dot">·</span><div class="special-text"> 站点连接</div></div>
+            <div class="special-title"><span class="special-dot">·</span><a class="special-text" href="{:url('index/articlelist',['mark'=>$cateList.Xiazai.mark,'type'=>'list'])}">{$cateList.Xiazai.title}</a></div>
+            <div class="special-list">
+                {foreach $cateList.Xiazai.sublist as $k=>$v}
+                {if $k <= 6}
+                <div class="limit-text">
+                <a class="xiazai-list" href="{:url('index/downfile',['id'=>$v.id])">{$v.title}</a>
+                </div>
+                {/if}
+                {/foreach}
+            </div>
+            <div class="special-title"><span class="special-dot">·</span><a class="special-text" href="{:url('index/articlelist',['mark'=>$cateList.Link.mark,'type'=>'list'])}">{$cateList.Link.title}</a></div>
             <div class="special-list">
                 {foreach $linkList as $k=>$item}
                 <a class="special-item special-{$k+1}" href="{:url('index/articlelist',['mark'=>$item.mark,'cate_id'=>$item.id,'type'=>'list'])}">{$item.name}</a>
                 {/foreach}
             </div>
-            <div class="special-title"><span class="special-dot">·</span><div class="special-text">公共服务</div></div>
-            <div class="special-list">
-                <a class="special-item special-1" href="{:url('index/articlelist',['mark'=>'Message','type'=>'list'])}">主席信访</a>
-            </div>
         </div>
     </div>
-    {/if}
 
-    {/foreach}
+    <!--sev-->
+    <div class="content-wrap content-item fir">
+        <div class="content-head">
+            <span class="head-title">{$cateList.Huodong.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Huodong.mark,'type'=>'list'])}">更多+</a>
+        </div>
+        <ul class="content-area">
+            {foreach $cateList.Huodong.sublist as $k=>$item}
+            {if $k <= 2}
+            <a class="huo-list">
+                <div class="huo-img" style="background:url(__ImagePath__{$item.img}) no-repeat center"></div>
+                <div class="huo-title">{$item.title}</div>
+            </a>
+            {/if}
+            {/foreach}
+        </ul>
+    </div>
+
+    <!--eig-->
+    <div class="content-wrap content-item fir no-padding">
+        <div class="content-head">
+            <span class="head-title">{$cateList.Zhibu.title}</span>
+            <a class="head-more" href="{:url('index/articlelist',['mark'=>$cateList.Zhibu.mark,'type'=>'list'])}">更多+</a>
+        </div>
+        <ul class="content-area">
+            {foreach $cateList.Zhibu.sublist as $k=>$item}
+            {if $k <= 4}
+            <div class="zhi-list">
+                <div class="zhi-left">
+                    <span class="zhi-day">{$item.sendtime|strtotime|date='d',###}</span>
+                    <span class="zhi-month">{$item.sendtime|strtotime|date='m',###}月</span>
+                    <span class="zhi-year">{$item.sendtime|strtotime|date='Y',###}</span>
+                </div>
+                <div class="zhi-title limit-text">{$item.title}</div>
+                <div class="zhi-desc">{$item.description}</div>
+            </div>
+            {/if}
+            {/foreach}
+
+        </ul>
+    </div>
+
+
 
 
 </div>

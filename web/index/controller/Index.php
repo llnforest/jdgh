@@ -25,9 +25,9 @@ class Index extends BaseController{
 
     //官网首页
     public function index(){
-        $cateList = BaseMarkModel::where(['mark'=>['not in',['Message','Link','Xiazai']]])->order('sort asc')->select();
+        $cateList = BaseMarkModel::where(['is_good'=>1])->column('*','mark');
         foreach($cateList as &$v){
-            $v['sublist'] = BaseContentModel::where(['mark'=>$v['mark']])->field('id,title,sendtime,description,img')->order('is_good desc,sort asc,sendtime desc')->limit(8)->select();
+            $v['sublist'] = BaseContentModel::where(['mark'=>$v['mark']])->field('id,title,sendtime,description,img,mark')->order('is_good desc,sort asc,sendtime desc')->limit(8)->select();
         }
         $this->data['cateList'] = $cateList;
         $this->data['linkList'] = BaseContentCategoryModel::where(['mark'=>'Link'])->order('sort asc')->select();

@@ -41,13 +41,6 @@
                 </td>
             </tr>
             <tr>
-                <th>信息简述</th>
-                <td>
-                    <textarea class="form-control text" type="text" name="description" placeholder="信息简述">{$info.description??''}</textarea>
-                    <span class="form-required">*</span>
-                </td>
-            </tr>
-            <tr>
                 <th>信息详情</th>
                 <td>
                     <script id="content" name="content" type="text/plain" style="width:850px;height:400px;">{$info.content??''}</script>

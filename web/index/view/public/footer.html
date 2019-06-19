@@ -3,27 +3,32 @@
 
     <div class="main-footer common-width">
         <div class="content-wrap footer-left">
-            <div class="content-head">
-                <span class="head-title">下载中心</span>
-                <a class="head-more" href="{:url('index/articlelist',['mark'=>'Xiazai','type'=>'list'])}">更多+</a>
-            </div>
-            <ul class="content-area">
-                {foreach $download as $v}
-                <li class="content-list" onclick="javascript:window.location.href='{:url("index/downfile",['id'=>$v.id])}';"> · {$v.title}</li>
-                {/foreach}
-            </ul>
         </div>
         <div class="content-wrap footer-right">
-            <div class="content-head">
-                <span class="head-title">社交媒体</span>
-            </div>
             <div class="content-area">
-                <div class="media-img" style="background:url(__ImagePath__{$info.wx_url}) no-repeat center;background-size: 160px;"></div>
+                <div class="media-img" style="background:url(__ImagePath__{$info.wx_url}) no-repeat center;background-size: 160px;{if empty($info.logo_url)}margin-right:100px;{/if}"></div>
+                {if $info.logo_url}
+                <div class="media-img" style="background:url(__ImagePath__{$info.logo_url}) no-repeat center;background-size: 160px;{if empty($info.wb_url)}margin-right:100px;{/if}"></div>
+                {else}
+                <div class="default-area">
+                    <div class="default-img weixin-img"></div>
+                    <div class="default-name">官方微信</div>
+                </div>
+                {/if}
+                {if $info.wb_url}
+                <div class="media-img" style="background:url(__ImagePath__{$info.wb_url}) no-repeat center;background-size: 160px;"></div>
+                {else}
+                <div class="default-area">
+                    <div class="default-img weibo-img"></div>
+                    <div class="default-name">官方微博</div>
+                </div>
+                {/if}
+
             </div>
         </div>
         <div class="cf"></div>
     </div>
     <div class="footer-text">
-        {$info.case_info} | {$info.power} | 安徽建筑大学南
+        {$info.case_info} | {$info.power}{if $info.address} | {$info.address}{/if}
     </div>
 </div>

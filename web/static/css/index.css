@@ -95,6 +95,10 @@
     text-overflow:ellipsis;
     margin-bottom:10px;
     padding-top:10px;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    word-wrap: break-word;
 }
 .content-item .news-hot .hot-content{
     height:35px;
@@ -107,6 +111,7 @@
 .special-area{
     margin-left: 3px;
     border:1px solid #e36769;
+    padding-bottom: 12px;
 }
 .special-title{
     font-weight: 700;
@@ -148,4 +153,89 @@
     background-color:#9ac448;
 }.special-3{
     background-color:#59cac4;
+}.special-4{
+     background-color: #cab832;
+}.special-5{
+  background-color: #ca4259;
+}
+ .xiazai-list{
+     font-weight:700;
+     font-size:12px;
+     line-height:18px;
+ }
+.content-wrap .huo-list{
+    width:70%;
+    margin-bottom:8px;
+    display:block;
+}
+.content-wrap .huo-list:last-child{
+    margin-bottom:0;
+}
+.content-wrap .huo-img{
+    height:133px;
+}
+.content-wrap .huo-title{
+    height:36px;
+    line-height:18px;
+    overflow: hidden;
+    font-size:14px;
+    margin-top: 4px;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    word-wrap: break-word;
+}
+
+.content-wrap .zhi-list{
+    height:75px;
+    position:relative;
+    padding-left:100px;
+    margin-bottom:18px;
+}
+.content-wrap .zhi-list:last-child{
+    margin-bottom:0;
+}
+
+.content-wrap .zhi-list .zhi-title{
+    height:30px;
+    margin-bottom:5px;
+    line-height:30px;
+}
+.content-wrap .zhi-list .zhi-desc{
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    word-wrap: break-word;
+    color:#666;
+    font-size:14px;
+    overflow: hidden;
+    line-height:20px;
+    height:40px;
+
+}
+.content-wrap .zhi-list .zhi-left{
+    position:absolute;
+    width:75px;
+    left:0;
+    bottom:0;
+    height:75px;
+    background:#0e90d2;
+}
+
+.content-wrap .zhi-list .zhi-left span{
+    display:block;
+    color:#fff;
+    text-align:center;
+    height:20px;
+    line-height:20px;
+    font-size: 13px;
+}
+
+.content-wrap .zhi-list .zhi-left .zhi-day{
+    background:#044fa0;
+    font-size:26px;
+    height:35px;
+    line-height:35px;
 }

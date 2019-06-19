@@ -30,17 +30,6 @@
                 </td>
             </tr>
             <tr>
-                <th>封面图片</th>
-                <td>
-                    <button name="image" type="button" class="layui-btn upload" lay-data="{'url': '{:url('index/upload/image',['type'=>'content'])}'}">
-                        <i class="layui-icon">&#xe67c;</i>上传图片
-                        <input class="image" type="hidden" name="img" value="{$info.img??''}">
-                        <img class="mini-image {$info.img?'':'hidden'}" data-path="__ImagePath__" src="{$info.img?'__ImagePath__'.$info.img:''}">
-                    </button>
-                    <span class="red block">(图片建议大小 252*234)</span>
-                </td>
-            </tr>
-            <tr>
                 <th>信息简述</th>
                 <td>
                     <textarea class="form-control text" type="text" name="description" placeholder="信息简述">{$info.description??''}</textarea>
@@ -81,28 +70,5 @@
     var ue = UE.getEditor('content',{
         enterTag : 'br'
     });
-    $(function(){
-        $(".add-img-btn").click(function(){
-            var _clone = $(".clone").clone(true,true).removeClass("clone");
-            $(".img-wrap").append(_clone);
-            return false;
-        })
-
-        $(".img-delete").click(function(){
-            $(this).parents('.img-block').remove();
-        })
-
-        $(".form-post").click(function(){
-            var sublist = [];
-            $(".img-wrap .img-block").each(function(index,item){
-                var url = $(item).find(".image").val();
-                if(url == '') return;
-                var sort = $(item).find(".img-sort").val().trim();
-                sublist.push({'url':url,sort:sort});
-            })
-            $("#img_data").val(JSON.stringify(sublist));
-        })
-    })
 </script>
-
 

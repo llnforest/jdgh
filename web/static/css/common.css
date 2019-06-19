@@ -107,17 +107,19 @@ a,span,p{
     float:left;
 }
 .footer-left{
-    width:45%;
-    padding-right:40px;
+    width: 344px;
+    height: 85px;
+    margin-top: 37.5px;
+    background: url(../image/logo.png) no-repeat center;
 }
 .footer-right{
-    width:55%;
+    margin-left: 100px;
 }
 .main-footer{
     padding:30px 0;
 }
 #footer{
-    background:#f7f7f7;
+    background:#044fa0;
 }
 #footer .content-list{
     border-bottom:1px dashed #666;
@@ -141,4 +143,26 @@ a,span,p{
 .main-nav{
     padding-left:290px;
     position:relative;
+}
+#footer .default-area {
+    float: left;
+    margin-left: 20px;
+    width:74px;
+    margin-top:43px;
+}
+#footer .default-area .default-img{
+    height:74px;
+}
+#footer .default-area .weixin-img{
+    background:url(../image/weixin.png) no-repeat center;
+    background-size:74px;
+}
+#footer .default-area .weibo-img{
+    background:url(../image/weibo.png) no-repeat center;
+    background-size:74px;
+}
+#footer .default-area .default-name{
+    margin-top:8px;
+    font-size:12px;
+    text-align: center;
 }

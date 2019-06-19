@@ -29,24 +29,7 @@
                     <span class="form-required">*</span>
                 </td>
             </tr>
-            <tr>
-                <th>封面图片</th>
-                <td>
-                    <button name="image" type="button" class="layui-btn upload" lay-data="{'url': '{:url('index/upload/image',['type'=>'content'])}'}">
-                        <i class="layui-icon">&#xe67c;</i>上传图片
-                        <input class="image" type="hidden" name="img" value="{$info.img??''}">
-                        <img class="mini-image {$info.img?'':'hidden'}" data-path="__ImagePath__" src="{$info.img?'__ImagePath__'.$info.img:''}">
-                    </button>
-                    <span class="red block">(图片建议大小 252*234)</span>
-                </td>
-            </tr>
-            <tr>
-                <th>信息简述</th>
-                <td>
-                    <textarea class="form-control text" type="text" name="description" placeholder="信息简述">{$info.description??''}</textarea>
-                    <span class="form-required">*</span>
-                </td>
-            </tr>
+           
             <tr>
                 <th>信息详情</th>
                 <td>

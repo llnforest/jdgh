@@ -54,8 +54,6 @@ class BaseController extends Controller
             $v['sub'] = BaseContentCategoryModel::where(['mark'=>$v['mark']])->order('sort asc')->select();
         }
         $this->assign('navList',$navList);
-        $download = BaseContentModel::where(['mark'=>'Xiazai'])->order('sort asc')->limit(3)->select();
-        $this->assign('download',$download);
 
     }
 
