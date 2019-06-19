@@ -2,6 +2,6 @@
 runtime
 admin/database.php
 admin/config.php
-admin/static/admin/*
+admin/static/admin/ueditor/*
 web/config.php
 web/database.php
