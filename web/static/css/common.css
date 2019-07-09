@@ -95,6 +95,26 @@ a,span,p{
     position:relative;
     top:1px;
 }
+.head-title-item{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    padding:0 5px;
+    color:#044fa0;
+    font-weight: 700;
+    position:relative;
+    top:1px;
+    width:90px;
+    text-align:center;
+    cursor: pointer;
+}
+.head-title-item.active{
+    color:#fff;
+    background:#044fa0;
+}
+.hidden{
+    display:none;
+}
 .head-more{
     height:30px;
     line-height:30px;
