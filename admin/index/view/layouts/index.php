@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>后台管理系统</title>
+    <title>安徽建筑大学网站管理系统</title>
     <meta charset="UTF-8"/>
     <link href="__PublicAdmin__/css/theme.min.css" rel="stylesheet">
     <link href="__PublicDefault__/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">

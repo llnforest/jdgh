@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8"/>
-    <title><?php echo isset($navTabs['title'])?$navTabs['title']:'后台管理系统'?></title>
+    <title><?php echo isset($navTabs['title'])?$navTabs['title']:'安徽建筑大学网站管理系统'?></title>
 
     {include file="publics:topCss"}
 </head>
