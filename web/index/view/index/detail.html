@@ -12,8 +12,8 @@ js=''
         <div class="list-cate">
             <div class="list-left">
                 <div class="left-list-title">{$mark.title}</div>
-                {foreach cateList as $v}
-                <a class="left-list {if $v.id == $cate.id}active{/if}" href="{:url('index/articlelist',['mark'=>$mark.mark,'type'=>$type,'cate_id'=>$v.id])}">{$v.name}</a>
+                {foreach name="cateList" item="v" key="key"}
+                <a class="left-list {if !isset($cate.id) && $key == 0}active{elseif isset($cate.id) && $v.id == $cate.id }active{/if}" href="{:url('index/articlelist',['mark'=>$mark.mark,'type'=>$type,'cate_id'=>$v.id])}">{$v.name}</a>
                 {/foreach}
             </div>
         {/if}

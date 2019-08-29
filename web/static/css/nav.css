@@ -1,7 +1,9 @@
 .index-nav{width: 100%;height: 45px;background:white;}
 /*.index-nav-frame{width: 1200px;margin: 0 auto;}*/
 .index-nav-frame-line{color: #333333;background: white;float: left;position: relative;display: block;outline: none;cursor: pointer;padding:0 20px;line-height: 45px;text-align: center;font-weight: 700;}
-.index-nav-frame-line.active{color:#044fa0;}
+.index-nav-frame-line.active {color:#044fa0;}
+.index-nav-frame-line.active .parent-nav{color:#044fa0;}
+.parent-nav{width:100%;height:100%;display:block;}
 
 .index-nav-frame-line-center{opacity: 0;height: 0;position: absolute;overflow: hidden;width: 170%;transition: all 0.5s;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;/* Firefox 4 */-o-transition: all 0.5s; /* Opera */    z-index: 9;left:0;}
 .index-nav-frame-line-li{width: 100%;font-weight: 500;text-align: left;padding-left:20px;background:  rgba(80,80,80,0.8);color:#fff;border-bottom: 1px dashed #a2a2a2;display:block;}
