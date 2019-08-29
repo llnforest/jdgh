@@ -45,3 +45,7 @@
     cursor:pointer;
     border-radius: 3px;
 }
+.nav-content a {
+    font-size: 14px;
+    color: #666;
+}

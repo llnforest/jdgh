@@ -66,8 +66,8 @@ class Index extends BaseController{
 
         $this->data['type'] = $this->param['type'];
         $this->data['nav'] = $this->param['mark'];
+        $this->data['cateList'] = BaseContentCategoryModel::where(['mark'=>$this->param['mark']])->order('sort asc')->select();
         if($this->param['type'] == 'nav' && count($this->data['list']) == 1){
-//            var_dump($this->data['list'][0]);
             $this->data['content'] = $this->data['list'][0];
             unset($this->data['list']);
             return view('index/detail',$this->data);
@@ -77,10 +77,10 @@ class Index extends BaseController{
 
     //文章详情
     public function articledetail(){
-
         $this->data['mark'] = BaseMarkModel::get(['mark'=>$this->param['mark']]);
         $this->data['type'] = $this->param['type'];
         $this->data['nav'] = $this->param['mark'];
+        $this->data['cateList'] = BaseContentCategoryModel::where(['mark'=>$this->param['mark']])->order('sort asc')->select();
 
         if($this->data['nav'] == 'Message'){
             $this->data['content'] = BaseMessageModel::get(['id'=>$this->id]);
