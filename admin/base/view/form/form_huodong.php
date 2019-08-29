@@ -30,17 +30,6 @@
                 </td>
             </tr>
             <tr>
-                <th>封面图片</th>
-                <td>
-                    <button name="image" type="button" class="layui-btn upload" lay-data="{'url': '{:url('index/upload/image',['type'=>'content'])}'}">
-                        <i class="layui-icon">&#xe67c;</i>上传图片
-                        <input class="image" type="hidden" name="img" value="{$info.img??''}">
-                        <img class="mini-image {$info.img?'':'hidden'}" data-path="__ImagePath__" src="{$info.img?'__ImagePath__'.$info.img:''}">
-                    </button>
-                    <span class="red block">(图片建议大小 252*234)</span>
-                </td>
-            </tr>
-            <tr>
                 <th>信息详情</th>
                 <td>
                     <script id="content" name="content" type="text/plain" style="width:850px;height:400px;">{$info.content??''}</script>

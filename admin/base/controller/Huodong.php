@@ -14,7 +14,7 @@ use think\Validate;
 
 class Huodong extends BaseController{
 
-    private $roleValidate = ['title|信息标题' => 'require','img|封面图片'=>'require','sort|排序' => 'number|lt:256'];
+    private $roleValidate = ['title|信息标题' => 'require','sort|排序' => 'number|lt:256'];
     //构造函数
     public function __construct()
     {

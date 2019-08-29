@@ -49,7 +49,6 @@
             {foreach $list as $v}
                 <tr>
                     <td><input type="checkbox" name="batch_id" data-id="{$v.id}" lay-skin="primary" lay-filter="itemChoose"></td>
-                    <td ><img class="mini-image" src="{$v.img?'__ImagePath__'.$v.img:''}" style="width:80px"></td>
                     <td>{$v.title}</td>
                     <td>{$v.name}</td>
                     <td>
